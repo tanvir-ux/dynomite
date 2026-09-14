@@ -1012,7 +1012,7 @@ static void req_forward(struct context *ctx, struct conn *c_conn,
 /*
  * Rewrites a query if necessary.
  *
- * If a rewrite occured, it will replace '*req' with the new 'msg' that contains
+ * If a rewrite occurred, it will replace '*req' with the new 'msg' that contains
  * the new query and free up the original msg.
  *
  */
@@ -1037,7 +1037,7 @@ rstatus_t rewrite_query_if_necessary(struct msg **req, struct context *ctx) {
 /*
  * Rewrites a query as a script that updates both the data and metadata.
  *
- * If a rewrite occured, it will replace '*req' with the new 'msg' that contains
+ * If a rewrite occurred, it will replace '*req' with the new 'msg' that contains
  * the new query and free up the original msg.
  *
  */
@@ -1355,3 +1355,4 @@ void init_client_conn(struct conn *conn) {
   conn->type = CONN_CLIENT;
   conn->ops = &client_ops;
 }
+
