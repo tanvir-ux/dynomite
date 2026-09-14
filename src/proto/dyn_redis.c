@@ -390,7 +390,7 @@ rstatus_t record_arg(uint8_t* start_pos, uint8_t* end_pos, struct array *target_
  *    query to fail. Rewriting it to a SORT query ensures ordering and thus
  *    ensures that the checksum comparison succeeds.
  *
- * * Sets *did_rewrite='true' if a rewrite occured and 'false' if not.
+ * * Sets *did_rewrite='true' if a rewrite occurred and 'false' if not.
  * * Does not modify 'orig_msg' and sets 'new_msg_ptr' to point to the new 'msg'
  * struct with the rewritten query if 'did_rewrite' is true.
  * * Caller must take ownership of the newly allocated msg '*new_msg_ptr'.
